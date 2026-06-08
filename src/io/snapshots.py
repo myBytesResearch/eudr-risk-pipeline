@@ -76,7 +76,9 @@ def load_audit_trail_sample(
     path = _runs_dir(repo_root) / run_date / "audit_trail_sample.csv"
     if not path.exists():
         raise FileNotFoundError(f"No audit_trail snapshot at {path}.")
-    df = pd.read_csv(path, parse_dates=["run_timestamp", "radd_alert_date"])
+    available = pd.read_csv(path, nrows=0).columns
+    parse_dates = [c for c in ("run_timestamp", "radd_alert_date") if c in available]
+    df = pd.read_csv(path, parse_dates=parse_dates)
     if aoi_id is not None:
         df = df[df["aoi_id"] == aoi_id].reset_index(drop=True)
     return df
