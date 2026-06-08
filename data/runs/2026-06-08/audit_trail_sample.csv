@@ -1,0 +1,6 @@
+aoi_id,lat,lon,lossyear,treecover2000_pct,gfc_tile_id,gfc_version,plantation_probability,plantation_layer_id,plantation_layer_version,threshold_tau,run_timestamp
+civ_soubre_33km,5.6504,-6.6488,24,33,10N_010W,UMD/hansen/global_forest_change_2025_v1_13,0.9294,projects/forestdatapartnership/assets/cocoa/model_2025a,2025a,0.5,2026-06-08T00:00:00Z
+civ_soubre_33km,5.6751,-6.6103,21,39,10N_010W,UMD/hansen/global_forest_change_2025_v1_13,0.9098,projects/forestdatapartnership/assets/cocoa/model_2025a,2025a,0.5,2026-06-08T00:00:00Z
+civ_soubre_33km,5.6525,-6.6618,21,55,10N_010W,UMD/hansen/global_forest_change_2025_v1_13,0.9804,projects/forestdatapartnership/assets/cocoa/model_2025a,2025a,0.5,2026-06-08T00:00:00Z
+civ_soubre_33km,5.7183,-6.6612,24,41,10N_010W,UMD/hansen/global_forest_change_2025_v1_13,0.9569,projects/forestdatapartnership/assets/cocoa/model_2025a,2025a,0.5,2026-06-08T00:00:00Z
+civ_soubre_33km,5.7948,-6.4591,23,45,10N_010W,UMD/hansen/global_forest_change_2025_v1_13,0.9882,projects/forestdatapartnership/assets/cocoa/model_2025a,2025a,0.5,2026-06-08T00:00:00Z

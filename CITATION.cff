@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "EUDR Risk Pipeline — Two-Mask Auditability Reference Implementation"
+message: "If you use this code, schema or numbers, please cite as below."
+type: software
+authors:
+  - family-names: Winger
+    given-names: Guido
+    affiliation: myBytes GmbH
+  - family-names: Pianowski
+    given-names: Mariusz
+    affiliation: myBytes GmbH
+repository-code: "https://github.com/myBytesResearch/eudr-risk-pipeline"
+url: "https://mybytes.com/research/notes/eudr-pixel-auditierbarkeit"
+abstract: >
+  A minimal reference implementation of the two-mask AND operation that
+  translates the EU Deforestation Regulation (VO 2023/1115) into
+  pixel-level auditability. Combines a post-cut-off forest-loss mask
+  (Hansen GFC v2025) with a plantation-probability mask (Kalischek 2023
+  for cocoa; analogous layers for the six other EUDR commodities) and
+  emits a per-pixel audit trail referencing only public data sources.
+  Companion to the article "EUDR ohne Bauchgefuehl - wie eine
+  auditierbare Risk-Maske pro Pixel funktioniert" (myBytes Research,
+  2026).
+keywords:
+  - eudr
+  - deforestation
+  - remote-sensing
+  - supply-chain
+  - compliance
+  - earth-observation
+  - sentinel-1
+  - hansen
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+version: 0.1.0
+date-released: "2026-06-07"
