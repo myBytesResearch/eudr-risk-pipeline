@@ -8,7 +8,7 @@ AOI in Google Earth Engine.
 Usage::
 
     import ee
-    ee.Initialize(project="your-gee-project")
+    ee.Initialize(project=os.environ["EE_PROJECT"])
     from src.gee import conversion_mask
     from src.aois import ee_geometry
 

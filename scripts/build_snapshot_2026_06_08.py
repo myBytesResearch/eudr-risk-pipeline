@@ -25,7 +25,15 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = REPO_ROOT / "data" / "runs" / "2026-06-08"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-ee.Initialize(project="mybytes-research-2026")
+import os
+
+_EE_PROJECT = os.environ.get("EE_PROJECT")
+if not _EE_PROJECT:
+    raise RuntimeError(
+        "Set the EE_PROJECT environment variable to your registered Earth "
+        "Engine Cloud project ID before running this script."
+    )
+ee.Initialize(project=_EE_PROJECT)
 
 RUN_TIMESTAMP = "2026-06-08T00:00:00Z"
 TAU = 0.50
