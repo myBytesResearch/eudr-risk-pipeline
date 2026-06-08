@@ -27,6 +27,12 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 import os
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv(REPO_ROOT / ".env")
+except ImportError:
+    pass  # python-dotenv is optional; users can export EE_PROJECT manually.
+
 _EE_PROJECT = os.environ.get("EE_PROJECT")
 if not _EE_PROJECT:
     raise RuntimeError(

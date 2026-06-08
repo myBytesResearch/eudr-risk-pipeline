@@ -8,3 +8,6 @@ seaborn>=0.13.0
 # rioxarray>=0.15
 # geopandas>=0.14
 # shapely>=2.0
+
+# Optional, for auto-loading EE_PROJECT and other secrets from .env:
+python-dotenv>=1.0.0
