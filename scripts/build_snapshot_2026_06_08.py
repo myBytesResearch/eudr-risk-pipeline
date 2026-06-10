@@ -1,3 +1,18 @@
+# =============================================================================
+#                     ____        __
+#    ____ ___  __  __/ __ )__  __/ /____  _____
+#   / __ `__ \/ / / / __  / / / / __/ _ \/ ___/
+#  / / / / / / /_/ / /_/ / /_/ / /_/  __(__  )
+# /_/ /_/ /_/\__, /_____/\__, /\__/\___/____/
+#           /____/      /____/
+#
+#  myBytes.com
+#  Copyright (c) 2026 myBytes GmbH. All rights reserved.
+#  Proprietary and confidential.
+#
+#  File: build_snapshot_2026_06_08.py | Project: eudr-risk-pipeline | Author: Guido Winger
+# =============================================================================
+
 """Build the 2026-06-08 reproducibility snapshot from a live GEE run.
 
 For each AOI (civ_soubre_33km, gha_sefwi_wiawso_33km) and each

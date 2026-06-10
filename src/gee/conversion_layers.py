@@ -1,3 +1,18 @@
+# =============================================================================
+#                     ____        __
+#    ____ ___  __  __/ __ )__  __/ /____  _____
+#   / __ `__ \/ / / / __  / / / / __/ _ \/ ___/
+#  / / / / / / /_/ / /_/ / /_/ / /_/  __(__  )
+# /_/ /_/ /_/\__, /_____/\__, /\__/\___/____/
+#           /____/      /____/
+#
+#  myBytes.com
+#  Copyright (c) 2026 myBytes GmbH. All rights reserved.
+#  Proprietary and confidential.
+#
+#  File: conversion_layers.py | Project: eudr-risk-pipeline | Author: Guido Winger
+# =============================================================================
+
 """Live Earth Engine constructors for the EUDR two-mask AND operation.
 
 This module is the public-data-only form of the EUDR two-mask AND
