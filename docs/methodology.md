@@ -74,7 +74,7 @@ Cocoa Model 2025a**, hosted on Google Earth Engine at
 model is built on the methodology of Kalischek et al. 2023 *Nature Food*
 and is maintained as a separately curated Google asset.
 
-**Licence note** — the FDP cocoa layer is licensed **CC-BY-4.0-NC**
+**Licensing note** — the FDP cocoa layer is licensed **CC-BY-4.0-NC**
 (non-commercial). Derived numerical values may not be redistributed for
 commercial purposes without separate licensing arrangements. The
 methodology and the code are freely usable; only the *layer values*
