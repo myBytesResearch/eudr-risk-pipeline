@@ -1,7 +1,7 @@
 # eudr-risk-pipeline
 
 Companion repository to the article
-**"EUDR ohne Bauchgefühl — wie eine auditierbare Risk-Maske pro Pixel funktioniert"**
+**"EUDR ohne Bauchgefühl - wie eine auditierbare Risk-Maske pro Pixel funktioniert"**
 ([mybytes.com/research/eudr-pixel-auditierbarkeit](https://mybytes.com/research/eudr-pixel-auditierbarkeit)).
 
 This repository contains the public-data version of the EUDR risk-mask
@@ -13,11 +13,11 @@ can be reproduced from the published snapshot in `data/runs/`.
 
 | Article claim | Source file | Reproduce with |
 |---|---|---|
-| Soubré, CIV — 2.74 % EUDR-risk share | `data/runs/2026-06-08/area_summary.csv` | `notebooks/00_reproduce_article_numbers.ipynb` |
-| Sefwi-Wiawso, GHA — 6.05 % EUDR-risk share | `data/runs/2026-06-08/area_summary.csv` | `notebooks/00_reproduce_article_numbers.ipynb` |
+| Soubré, CIV - 2.74 % EUDR-risk share | `data/runs/2026-06-08/area_summary.csv` | `notebooks/00_reproduce_article_numbers.ipynb` |
+| Sefwi-Wiawso, GHA - 6.05 % EUDR-risk share | `data/runs/2026-06-08/area_summary.csv` | `notebooks/00_reproduce_article_numbers.ipynb` |
 | Five example audit-trail pixels (Plot 3) | `data/runs/2026-06-08/audit_trail_sample.csv` | `notebooks/01_reproduce_audit_trail.ipynb` |
 | Two-mask AND operation | `src/masks/` and `src/operations/eudr_risk.py` | unit-level inspection |
-| Live-GEE recomputation on any AOI | — | `notebooks/02_live_gee_pipeline.ipynb` (requires GEE auth) |
+| Live-GEE recomputation on any AOI | - | `notebooks/02_live_gee_pipeline.ipynb` (requires GEE auth) |
 
 The article numbers come from the **myBytes pipeline run of 2026-06-08**,
 documented in the upstream research project as
@@ -49,7 +49,7 @@ eudr-risk-pipeline/
 ├── docs/
 │   └── methodology.md      ← the 2-mask operation in detail, with anchors
 ├── data/
-│   ├── runs/2026-06-08/    ← published snapshot — canonical source of article numbers
+│   ├── runs/2026-06-08/    ← published snapshot - canonical source of article numbers
 │   │   ├── area_summary.csv
 │   │   ├── audit_trail_sample.csv
 │   │   └── README.md
@@ -104,11 +104,11 @@ uses. Replace the AOI with any entry in `src/aois.py::AOIS` and rerun.
 | Forest loss historical, 2024 vintage | `UMD/hansen/global_forest_change_2024_v1_12` (Hansen 2013) | 30 m | open, attribution. Commercial reuse OK. |
 | Forest loss historical, 2025 vintage | `UMD/hansen/global_forest_change_2025_v1_13` (Hansen 2013) | 30 m | open, attribution. Commercial reuse OK. |
 | Forest loss near-real-time | `projects/radar-wur/raddalert/v1` (Reiche 2021, 2024) | 10 m | open for monitoring; commercial redistribution of alert IDs requires confirmation with Wageningen |
-| Cocoa plantation probability | `projects/forestdatapartnership/assets/cocoa/model_2025a` (FDP, building on Kalischek 2023) | 10 m | **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) — non-commercial** |
+| Cocoa plantation probability | `projects/forestdatapartnership/assets/cocoa/model_2025a` (FDP, building on Kalischek 2023) | 10 m | **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) - non-commercial** |
 | Sentinel-2 SR Harmonized (used in figures) | `COPERNICUS/S2_SR_HARMONIZED` (ESA / Copernicus) | 10 m | [Copernicus License](https://sentinel.esa.int/web/sentinel/terms-conditions). Commercial reuse OK with attribution. |
-| AOI bounding boxes | `src/aois.py` — USDA FAS PSD 2023 + ICCO 2023 sized + town-centred 33 × 33 km AOIs | varies | own work, CC BY 4.0 |
+| AOI bounding boxes | `src/aois.py` - USDA FAS PSD 2023 + ICCO 2023 sized + town-centred 33 × 33 km AOIs | varies | own work, CC BY 4.0 |
 
-### License pitfall — read before commercial use
+### License pitfall - read before commercial use
 
 The cocoa-plantation-probability layer of the Forest Data Partnership is
 licensed under **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**.
@@ -157,7 +157,7 @@ path is not part of this release.
 
 ## Licence
 
-Three distinct licences apply — read each before reusing the material.
+Three distinct licences apply - read each before reusing the material.
 
 - **Code** (everything under `src/`, `notebooks/`, `scripts/`):
   [MIT](LICENSE). Commercial reuse allowed with attribution.
@@ -165,9 +165,9 @@ Three distinct licences apply — read each before reusing the material.
   under `docs/`, this README, `src/aois.py`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   Commercial reuse allowed with attribution.
 - **FDP-derived numerical values** (the cocoa probability layer
-  itself, and every derived number that comes from it — including the
+  itself, and every derived number that comes from it - including the
   Soubré and Sefwi-Wiawso risk-share values published here):
-  **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** —
+  **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)** -
   upstream Forest Data Partnership. **Commercial redistribution
   prohibited without FDP sub-licence**, see the License-pitfall
   section above.

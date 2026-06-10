@@ -1,4 +1,4 @@
-# Methodology — the Two-Mask Operation in Detail
+# Methodology - the Two-Mask Operation in Detail
 
 ## The regulatory anchor
 
@@ -6,13 +6,13 @@ EU Regulation 2023/1115 on deforestation-free products (EUDR) imposes
 three core obligations on operators that place relevant commodities on
 the EU market:
 
-- **Article 2 (Definitions)** — establishes the cut-off date of
+- **Article 2 (Definitions)** - establishes the cut-off date of
   **31 December 2020**: a product is non-compliant if it was produced
   on land deforested or degraded after that date.
-- **Article 9 (Information requirements)** — requires operators to
+- **Article 9 (Information requirements)** - requires operators to
   collect, store, and provide geolocation data for every plot of land
   where the relevant commodity was produced.
-- **Article 10 (Risk assessment)** — requires a documented risk
+- **Article 10 (Risk assessment)** - requires a documented risk
   assessment per plot, demonstrating that the risk of non-compliance is
   *negligible*.
 
@@ -38,9 +38,9 @@ respects amplified.
 
 ## The two masks
 
-### Mask A — Hansen Loss Mask with implicit forest baseline
+### Mask A - Hansen Loss Mask with implicit forest baseline
 
-Mask A combines TWO Hansen bands. The forest baseline is not optional —
+Mask A combines TWO Hansen bands. The forest baseline is not optional -
 without it, Mask A would count loss of non-forest land cover (savanna,
 cropland, water, built-up) which is not what EUDR Art. 2 requires.
 
@@ -58,7 +58,7 @@ Mask_A(x) = (Hansen.treecover2000(x) >= 30 %)
 The default cut-off (`21` = year 2021) matches the EUDR cut-off "after
 31 December 2020".
 
-### Mask B — Plantation Probability Mask
+### Mask B - Plantation Probability Mask
 
 For a per-pixel plantation-probability layer `P(x) ∈ [0, 1]` the
 condition is
@@ -74,13 +74,13 @@ Cocoa Model 2025a**, hosted on Google Earth Engine at
 model is built on the methodology of Kalischek et al. 2023 *Nature Food*
 and is maintained as a separately curated Google asset.
 
-**Licensing note** — the FDP cocoa layer is licensed **CC-BY-4.0-NC**
+**Licensing note** - the FDP cocoa layer is licensed **CC-BY-4.0-NC**
 (non-commercial). Derived numerical values may not be redistributed for
 commercial purposes without separate licensing arrangements. The
 methodology and the code are freely usable; only the *layer values*
 carry the NC restriction.
 
-Analogous layers exist for the other six EUDR commodities — MapBiomas
+Analogous layers exist for the other six EUDR commodities - MapBiomas
 plus Trase for Brazilian soy, Descals et al. 2024 for oil palm, FAO
 Forest Resources Assessment connections for timber and rubber. See the
 README source table.
@@ -117,7 +117,7 @@ following fields:
 | `plantation_probability` | plantation-layer raw value at this pixel |
 | `plantation_layer_id`, `plantation_layer_version` | layer identifier and dataset version stamp |
 | `threshold_tau` | the threshold used at evaluation time |
-| `radd_alert_id` | optional — RADD alert identifier if a near-real-time alert overlaps |
+| `radd_alert_id` | optional - RADD alert identifier if a near-real-time alert overlaps |
 
 Every field references a public dataset and the value can be
 reconstructed by an external auditor by querying the same dataset.
@@ -137,7 +137,7 @@ methodological short list:
    region-of-interest is a different statistical object than aggregating
    over a supplier polygon. Both are valid; their meanings differ.
 4. **Forest vs plantation classification at forest edges.** False
-   positives concentrate near plantation–forest transitions; an IoU
+   positives concentrate near plantation-forest transitions; an IoU
    audit at the edge cohort is mandatory.
 5. **Temporal mismatch between Hansen annual and RADD weekly.** Use
    RADD for near-real-time, Hansen for the annual historical baseline,
@@ -145,21 +145,21 @@ methodological short list:
 
 ## References
 
-- Hansen et al. 2013 — "High-Resolution Global Maps of 21st-Century
-  Forest Cover Change" *Science* 342 (6160), 850–853.
-- Kalischek et al. 2023 — "Cocoa plantations are associated with
-  deforestation in West Africa" *Nature Food* 4, 384–393.
-- Reiche et al. 2021 — "Forest disturbance alerts for the Congo Basin
+- Hansen et al. 2013 - "High-Resolution Global Maps of 21st-Century
+  Forest Cover Change" *Science* 342 (6160), 850-853.
+- Kalischek et al. 2023 - "Cocoa plantations are associated with
+  deforestation in West Africa" *Nature Food* 4, 384-393.
+- Reiche et al. 2021 - "Forest disturbance alerts for the Congo Basin
   using Sentinel-1" *Environmental Research Letters* 16.
-- Reiche et al. 2024 — RADD documentation and validation updates,
+- Reiche et al. 2024 - RADD documentation and validation updates,
   *Remote Sensing of Environment*.
-- Olofsson et al. 2014 — "Good practices for estimating area and
-  assessing accuracy of land change" *RSE* 148, 42–57.
-- Stehman 2014 — "Estimating area and map accuracy for stratified random
-  sampling" *RSE* 144, 159–169.
-- Curtis et al. 2018 — "Classifying drivers of global forest loss"
-  *Science* 361 (6407), 1108–1111.
-- Verordnung (EU) 2023/1115 — Amtsblatt der Europäischen Union L 150/206,
+- Olofsson et al. 2014 - "Good practices for estimating area and
+  assessing accuracy of land change" *RSE* 148, 42-57.
+- Stehman 2014 - "Estimating area and map accuracy for stratified random
+  sampling" *RSE* 144, 159-169.
+- Curtis et al. 2018 - "Classifying drivers of global forest loss"
+  *Science* 361 (6407), 1108-1111.
+- Verordnung (EU) 2023/1115 - Amtsblatt der Europäischen Union L 150/206,
   9 June 2023.
-- EU Parliament press release 17.12.2025 — second targeted revision.
-- Council of the EU 18.12.2025 — formal adoption of targeted revision.
+- EU Parliament press release 17.12.2025 - second targeted revision.
+- Council of the EU 18.12.2025 - formal adoption of targeted revision.

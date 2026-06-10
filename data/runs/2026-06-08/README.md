@@ -1,4 +1,4 @@
-# Pipeline run snapshot — 2026-06-08
+# Pipeline run snapshot - 2026-06-08
 
 This directory is the **primary reproducibility snapshot** for the
 companion articles
@@ -25,16 +25,16 @@ snapshot via `notebooks/00_reproduce_article_numbers.ipynb`.
 
 ## Files
 
-- `area_summary.csv` — one row per (AOI × Hansen-vintage) with
+- `area_summary.csv` - one row per (AOI × Hansen-vintage) with
   plantation area, EUDR-risk area, risk share, topology annotation,
   and full provenance fields.
-- `vintage_drift.csv` — one row per AOI with the 2024-vs-2025 vintage
+- `vintage_drift.csv` - one row per AOI with the 2024-vs-2025 vintage
   comparison and the Δ in percentage points.
-- `audit_trail_sample.csv` — five real EUDR-Risk pixels from the
+- `audit_trail_sample.csv` - five real EUDR-Risk pixels from the
   Soubré AOI (Hansen 2025 vintage), sampled with seed 42, with full
   per-pixel provenance.
 
-## Licence pitfall — read this before publishing the snapshot numbers
+## Licence pitfall - read this before publishing the snapshot numbers
 
 The Forest Data Partnership cocoa-probability layer is licensed under
 **[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)**
