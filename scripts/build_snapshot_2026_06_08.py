@@ -44,7 +44,7 @@ import os
 
 try:
     from dotenv import load_dotenv
-    load_dotenv(REPO_ROOT / "..env")
+    load_dotenv(REPO_ROOT / ".env")
 except ImportError:
     pass  # python-dotenv is optional; users can export EE_PROJECT manually.
 
@@ -237,7 +237,7 @@ README = f"""# Pipeline run snapshot — 2026-06-08
 
 This directory is the **primary reproducibility snapshot** for the
 companion articles
-[`eudr-pixel-auditability`](https://mybytes.com/research/notes/eudr-pixel-auditability)
+[`eudr-pixel-auditierbarkeit`](https://mybytes.com/research/notes/eudr-pixel-auditierbarkeit)
 and
 [`eudr-update-2026`](https://mybytes.com/research/notes/eudr-update-2026).
 Every risk-share number quoted in either article reproduces from this
