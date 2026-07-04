@@ -10,7 +10,7 @@ authors:
     given-names: Mariusz
     affiliation: myBytes GmbH
 repository-code: "https://github.com/myBytesResearch/eudr-risk-pipeline"
-url: "https://mybytes.com/research/notes/eudr-pixel-auditierbarkeit"
+url: "https://mybytes.com/research/eudr-pixel-audit"
 abstract: >
   A minimal reference implementation of the two-mask AND operation that
   translates the EU Deforestation Regulation (VO 2023/1115) into

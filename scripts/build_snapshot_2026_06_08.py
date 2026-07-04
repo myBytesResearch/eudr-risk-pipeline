@@ -237,9 +237,9 @@ README = f"""# Pipeline run snapshot — 2026-06-08
 
 This directory is the **primary reproducibility snapshot** for the
 companion articles
-[`eudr-pixel-auditierbarkeit`](https://mybytes.com/research/notes/eudr-pixel-auditierbarkeit)
+[`eudr-pixel-audit`](https://mybytes.com/research/eudr-pixel-audit)
 and
-[`eudr-update-2026`](https://mybytes.com/research/notes/eudr-update-2026).
+[`eudr-update-2026`](https://mybytes.com/research/eudr-update-2026).
 Every risk-share number quoted in either article reproduces from this
 snapshot via `notebooks/00_reproduce_article_numbers.ipynb`.
 

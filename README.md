@@ -2,7 +2,7 @@
 
 Companion repository to the article
 **"EUDR ohne Bauchgefühl - wie eine auditierbare Risk-Maske pro Pixel funktioniert"**
-([mybytes.com/research/eudr-pixel-auditierbarkeit](https://mybytes.com/research/eudr-pixel-auditierbarkeit)).
+([mybytes.com/research/eudr-pixel-audit](https://mybytes.com/research/eudr-pixel-audit)).
 
 This repository contains the public-data version of the EUDR risk-mask
 methodology that produced the article's Soubré (2.3 %) and
